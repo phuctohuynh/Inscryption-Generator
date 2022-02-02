@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscryption Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inscryption Card Generator</h1>
+    </header>
+    <a href="../index.html">[Home]</a>
+    <br />
+    <p>
+      <label for="event" id="labelNoPadding">Choose the Type of Card:</label>
+      <select id="event">
+        <option value="normal" selected="true">Random Card</option>
+        <option value="rare">Rare Card</option>
+        <option value="bird">Random Bird</option>
+        <option value="canine">Random Canine</option>
+        <option value="hooved">Random Hooved</option>
+        <option value="insect">Random Insect</option>
+        <option value="reptile">Random Reptile</option>
+        <option value="sigil">Random Sigil</option>
+        <option value="item">Random Item</option>
+        <option value="chance">Random Chance</option>
+      </select>
+    </p>
+    <p>
+      Enter Number of Cards (For Random Chance, type in the percentage of the
+      outcome):
+    </p>
+    <input type="number" id="numOfCards" min="1" class="textbox" />
+    <!--<p>
+      Pick Challenges (Optional, these challenges effect how events generate;
+      for No Boss Rare challenge, please choose Random Card instead of Rare
+      Card):
+    </p>-->
+    <p>
+      Note that if 2 of the same cards shows up at the same time, please press
+      Generate button again.
+    </p>
+    <div id="center">
+      <input type="submit" value="Generate" id="generate" />
+    </div>
+    <p id="result"></p>
+    <script src="app.js"></script>
+  </body>
+</html>

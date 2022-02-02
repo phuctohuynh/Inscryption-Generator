@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscryption MAP Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inscryption Map Generator</h1>
+    </header>
+    <a href="../index.html">[Home]</a>
+    <p>Choose the number of nodes.</p>
+    <p>
+      Each node contains 1 Card Event, 1 Util Event and 1 Battle. Boss nodes
+      have 2 Util Events instead of 1.
+    </p>
+    <p>Enter Number of Nodes:</p>
+    <input type="number" id="numOfNodes" min="2" value="3" class="textbox" />
+    <p>
+      Enter Map Number; For map 4, the 4 map icons are Backpack, Altar, Trader
+      and Woodcarver:
+    </p>
+    <input
+      type="number"
+      id="mapNumber"
+      min="1"
+      value="2"
+      max="3"
+      class="textbox"
+    />
+    <p>
+      Pick Challenges (Optional, these challenges effect how maps generate):
+    </p>
+    <input type="checkbox" id="ch-totembattle" class="chall" />
+    <label for="ch-totembattle">Totem Battles</label>
+    <p></p>
+    <div id="center">
+      <input type="submit" value="Generate" id="generate" />
+    </div>
+    <div id="map"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

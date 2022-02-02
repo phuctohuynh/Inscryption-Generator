@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscryption Event Cards Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inscryption Event Cards Generator</h1>
+    </header>
+    <a href="../index.html">[Home]</a>
+    <br />
+    <p>
+      <label for="event" id="labelNoPadding">Choose the Event:</label>
+      <select id="event">
+        <option value="boulder">Boulder</option>
+        <option value="cost">Choose Cost</option>
+        <option value="random" selected="true">Random Card</option>
+        <option value="trapper">Trapper</option>
+        <option value="trial">Trial</option>
+        <option value="tribe">Random Tribe</option>
+        <option value="rare">Rare Card</option>
+        <option value="altar">Altar</option>
+        <option value="backpack">Backpack</option>
+        <option value="campfire">Campfire</option>
+        <option value="copy">Goobert</option>
+        <option value="mycologist">Mycologist</option>
+        <option value="remove">Remove Card</option>
+        <option value="totem">Woodcarver</option>
+        <option value="trade">Trade Pelts</option>
+      </select>
+    </p>
+    <!--<p>
+      Pick Challenges (Optional, these challenges effect how events generate;
+      for No Boss Rare challenge, please choose Random Card instead of Rare
+      Card):
+    </p>
+    <input type="checkbox" id="ch-priceypelts" class="chall" />
+    <label for="ch-priceypelts" id="labelNoPadding"
+      >Pricey Pelts - Multiply the Pelt costs by 2</label
+    >-->
+    <p>
+      Note that if 2 of the same cards shows up at the same time, please press
+      Generate button again.
+    </p>
+    <div id="center">
+      <input type="submit" value="Generate" id="generate" />
+    </div>
+    <p id="result"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
