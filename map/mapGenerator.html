@@ -12,17 +12,15 @@
       <h1>Inscryption Map Generator</h1>
     </header>
     <a href="../index.html">[Home]</a>
-    <p>Choose the number of nodes.</p>
     <p>
-      Each node contains 1 Card Event, 1 Util Event and 1 Battle. Boss nodes
-      have 2 Util Events instead of 1.
+      Choose the number of sections.<br />Each section contains 1 Card Event, 1
+      Utility Event and 1 Battle Event.<br />Boss sections have 2 Utility Events
+      instead of 1.<br />Note that this generator will not generate the paths.
+      You have to draw the paths by yourself.
     </p>
-    <p>Enter Number of Nodes:</p>
+    <p>Enter Number of Sections:</p>
     <input type="number" id="numOfNodes" min="2" value="3" class="textbox" />
-    <p>
-      Enter Map Number; For map 4, the 4 map icons are Backpack, Altar, Trader
-      and Woodcarver:
-    </p>
+    <p>Enter Map Number from 1 to 3.</p>
     <input
       type="number"
       id="mapNumber"
@@ -32,7 +30,7 @@
       class="textbox"
     />
     <p>
-      Pick Challenges (Optional, these challenges effect how maps generate):
+      For map 4, the 4 map icons are Backpack, Altar, Trader and Woodcarver:
     </p>
     <input type="checkbox" id="ch-totembattle" class="chall" />
     <label for="ch-totembattle">Totem Battles</label>
